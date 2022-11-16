@@ -1,0 +1,25 @@
+/.DS_Store
+.DS_Store/
+.DS_Store
+
+target/
+Workflow/Service/apache-tomcat-7.0.52/logs/
+Workflow/Service/apache-tomcat-7.0.52/work/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+/target
+.classpath
+.project
+.settings/
+/target
+logs
+
+*.csv
+
+deploy.zip
+
+dependency-reduced-pom.xml

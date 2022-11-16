@@ -1,0 +1,35 @@
+# Change default server ports
+server:
+  adminContextPath: "/lms/admin"
+  rootPath: "/lms/v1"
+
+  applicationConnectors:
+    - type: "http"
+      port: 9000
+  adminConnectors:
+    - type: "http"
+      port: 9001
+
+  requestLog:
+    appenders:
+      - type: "console"
+        threshold: "INFO"
+        target: "STDOUT"
+  gzip:
+    enabled: true
+    minimumEntitySize: "256B"
+    bufferSize: "8KiB"
+
+swagger:
+  title: "Library Management System API"
+  version: "1.0"
+  resourcePackage: com.mmefta.lms.resources
+
+mongoConfiguration:
+  dbName: "LibraryCatalog"
+  mongoDBPrimary: localhost
+  mongoDBSecondary: localhost
+  mongoDBPort: 27017
+  authorsCollection: "Authors"
+  bookItemCollection: "bookItems"
+  bookCollection: "bookList"
