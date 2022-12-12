@@ -30,6 +30,6 @@ mongoConfiguration:
   mongoDBPrimary: localhost
   mongoDBSecondary: localhost
   mongoDBPort: 27017
-  authorsCollection: "Authors"
-  bookItemCollection: "bookItems"
-  bookCollection: "bookList"
+  authorsCollection: "Authors_prod"
+  bookItemCollection: "bookItems_prod"
+  bookCollection: "bookList_prod"
